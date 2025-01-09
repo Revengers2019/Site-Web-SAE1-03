@@ -2,51 +2,81 @@
 <html lang="fr">
 <head>
   <link rel="icon" href="https://cdn-icons-png.flaticon.com/512/11813/11813930.png" type="image/x-icon">
-
   <meta charset="UTF-8">
-  <link rel="stylesheet" href="barre.css">
+  <link rel="stylesheet" href="accueil.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
   <title>Rapport</title>
+  <style>
+    /* Changer la couleur de fond de la navbar en rouge */
+    .navbar {
+        background-color: rgba(255, 255, 255, 0.4);
+        position: fixed;
+        width: 100%;
+        z-index: 20;
+        backdrop-filter: blur(8px);
+    }
+
+</style>
 </head>
-
 <body>
-<h1>Rapport</h1>
+  <nav class="navbar navbar-expand-lg navbar-light">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">
+                <img src="https://lvts.fr/wp-content/uploads/2022/03/UniversiteParis_monogramme_couleur_RVB-e1712425218876.png" alt="Logo Université" width="30" height="30">
+                Université Paris Rive De Seine
+            </a>
+            <!-- Bouton burger pour afficher le menu sur mobile -->
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Accueil</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="Rapport.html">Rapport</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="MachineVM.html">VM</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="audio.html">Audio Anglais</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+  
+  <main>
+    <h2>Rapport</h2>
+    
+    <div class="bloc">
+      <h1>Objectifs principaux :</h1>
+      <ul>
+        <li>Créer et héberger une machine virtuelle sur des serveurs tels qu'Apache ou Nginx</li>
+        <hr>
+        <li>Créer un site web, puis l'héberger sur notre machine virtuelle configurée</li>
+        <hr>
+        <li>Effectuer un audio en anglais présentant les aspects d'une machine virtuelle</li>
+        <hr>
+        <li>Rédiger un dossier expliquant les solutions et choix techniques utilisés</li>
+      </ul>
+    </div>
+    
+    <div class="bloc">
+      <h1>Diagramme de Gantt :</h1>
+      <img src="gantttttt.jpg" alt="Diagramme de Gantt" class="img-fluid">
+    </div>
+  </main>
 
-<h2>
-  <nav>
-    <a href="Acceuil.html">Accueil</a>
-    <a href="Rapport.html">Rapport</a>
-    <a href="MachineVM.html">VM</a>
-    <a href="audio.html">Audio</a>
-  </nav>
-</h2>
-
-
-<h3>
-  <u>Objectifs principaux :</u>
-  <ul>
-    <br>
-    Crée et héberger une machine virtuelle sur des serveurs tels qu'Apache ou Nginx <hr>
-    Crée un site web , puis l'héberge sur notre machine virtuelle configurée.<hr>
-    Effectuer un audio en anglais présentant les aspects d'une machine virtuelle<hr>
-    Rédiger un dossier expliquant les solutions et choix techniques utilisés
-  </ul>
-</h3>
-
-<h4>
-  <u>Diagramme de Gantt</u>
-  <ul>
-    <br>
-    <img src="Capture.JPG " alt="">
-  </ul>
-</h4>
-<br>
-
-
-
-<footer>
-  <p>&copy; 2025 SAE1-03 site web Tous droits réservés.</p>
-  <hr>
-  <a href="A%20propos.html">A propos</a>
-</footer>
+  <footer>
+    <p>&copy; 2025 SAE1-03 site web Tous droits réservés.</p>
+    <hr>
+    <a href="A%20propos.html">A propos</a>
+  </footer>
 </body>
 </html>
