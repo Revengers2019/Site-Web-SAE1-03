@@ -1,106 +1,77 @@
 /* Styles pour le corps de la page */
 body {
-    font-family: "Arial Black", Helvetica, sans-serif;
+    font-family: "Montserrat";
     margin: 0;
     padding: 0;
-    background-image: url("https://img.freepik.com/photos-gratuite/fond-3d-cubes-blancs_23-2150472987.jpg?semt=ais_hybrid");
     background-size: cover;
 }
 
-/* Styles pour la barre de navigation */
-nav {
-    background-size: cover;
-    background-image: url("https://img.freepik.com/photos-gratuite/fond-3d-cubes-blancs_23-2150472987.jpg?semt=ais_hybrid");
-    padding: 10px 20px;
-    font-size: 25px;
-    position: fixed;
+.background {
     width: 100%;
+    height: 100vh;
     top: 0;
-    z-index: 1000;
+    position: fixed;
+    object-fit: cover;
+    z-index: -1;
 }
 
-/* Styles pour les liens de la barre de navigation */
-nav a {
-    color: black;
-    text-decoration: none;
-    padding: 10px 20px;
-    margin: 0 10px;
-    border-radius: 5px;
-    font-weight: bold;
-    transition: background-color 0.3s ease; /* Effet de survol */
+h2 {
+    text-align: center;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    font-family: "Montserrat";
 }
-nav a:hover {
-    background-color: #0000007F
-}
-
-/* Media query pour les écrans plus petits (tablettes et téléphones) */
-@media screen and (max-width: 768px) {
-    nav a {
-        display: block; /* Empile les liens verticalement */
-        margin: 10px 0; /* Marge entre les liens */
-        text-align: center; /* Centrer les liens */
-    }
-
-    nav a:hover {
-        background-color: rgba(0, 0, 0, 0.5);
-    }
-}
-
-/* Optionnel : Media query pour les très petits écrans (téléphones) */
-@media screen and (max-width: 480px) {
-    nav a {
-        font-size: 14px;
-    }
-}
-
 
 h1 {
     text-align: center;
     color: black;
-    font-size: 50px;
-    margin-top: 100px; /* Évite le chevauchement avec la barre de navigation */
+    font-size: 18px; /* Évite le chevauchement avec la barre de navigation */
     z-index: 1;
-
 }
 
-h2 {
-    text-align: left;
-    color: black;
-    font-size: 30px;
-}
-
-h3, h4, h5 {
-    font-size: 25px;
-    border: 2px solid black;
-    margin: 20px auto;
-    padding: 20px;
+.bloc {
+    font-size: 18px;
+    background-color: #fff;
     text-align: center;
-    box-sizing: border-box;
-    border-radius: 50px;
+    border-radius: 20px;
     color: black;
-    width: 90%; /* Assure que la largeur est constante */
-    max-width: 900px; /* Limite la largeur maximale */
-}
-h6 {
-    font-size: 25px;
-    border: 2px solid black;
-    margin: 20px auto;
+    width: 100%; /* Assure que la largeur est constante */
+    max-width: 900px;
+    box-shadow: #dddddd 0 0 20px;/* Limite la largeur maximale */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
     padding: 20px;
-    text-align: center;
-    box-sizing: border-box;
-    border-radius: 50px;
-    color: black;
-    width: 90%; /* Assure que la largeur est constante */
-    max-width: 900px; /* Limite la largeur maximale */
+    font-family: "Montserrat";
+}
+
+.bloc p,li {
+    text-align: start;
+    margin: 0;
+    font-size: 16px;
+    font-weight: 400;
+    color: #424242;
+}
+
+.bloc h1 {
+    text-align: start;
+    width: 100%;
+    font-size: 22px;
+    font-weight: 600;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    padding: 20px;
+    padding-top: 80px;
 }
 /* Modification spécifique pour les images à l'intérieur des éléments avec bordure */
-h3 img, h4 img, h5 img, h6 img {
-    width: 100%; /* L'image prend toute la largeur du conteneur */
-    height: auto; /* Conserve les proportions de l'image */
-    box-sizing: border-box; /* Inclut la bordure dans la taille de l'élément */
-    font-size:;
-}
-
 
 html, body {
     height: 100%;
@@ -130,3 +101,6 @@ footer a:hover, footer a:active {
     color: white;
 }
 
+.img-fluid{
+    margin-bottom: 0%;
+}
