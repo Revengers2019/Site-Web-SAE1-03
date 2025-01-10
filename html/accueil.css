@@ -114,3 +114,34 @@ footer a {
     padding: 2px 16px;
 
   }
+  /* Gallery container */
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* 2 images par ligne */
+    gap: 10px; /* Espacement entre les images */
+    max-width: 880px; /* Largeur ajustée de la galerie */
+    border-radius: 100px;
+    margin: 0 auto; /* Centrage horizontal du conteneur */
+    justify-content: center; /* Centre le contenu dans la galerie */
+    align-items: center; /* Centre verticalement dans la galerie */
+    padding: 20px 0; /* Optionnel, pour donner de l'espace en haut et en bas */
+}
+
+/* Chaque container d'image */
+.image-container {
+    width: 100%;
+    height: 300px; /* Taille du carré */
+    overflow: hidden; /* Masquer l'excédent de l'image */
+    border: 2px solid #ccc; /* Bordure légère */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #f0f0f0; /* Fond gris clair */
+}
+
+/* Les images dans le container */
+.image-container img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* L'image remplit l'espace sans déformer */
+}
